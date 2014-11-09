@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  LZAppDelegate.h
 //  Lulz
 //
 //  Created by Dmitry Sobolev on 07/11/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface LZAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

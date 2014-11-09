@@ -6,18 +6,18 @@
 //  Copyright (c) 2014 Dmitry Sobolev. All rights reserved.
 //
 
-#import "MasterViewController.h"
-#import "DetailViewController.h"
+#import "LZMasterViewController.h"
+#import "LZDetailViewController.h"
 #import "Realm/Realm.h"
-#import "Timestamp.h"
+#import "LZTimestamp.h"
 
-@interface MasterViewController ()
+@interface LZMasterViewController ()
 
 @property (nonatomic, strong) RLMNotificationToken *token;
 
 @end
 
-@implementation MasterViewController
+@implementation LZMasterViewController
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -34,7 +34,7 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
-    self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    self.detailViewController = (LZDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 
     self.token = [[RLMRealm defaultRealm] addNotificationBlock:^(NSString *note, RLMRealm *realm){
         [self.tableView reloadData];
@@ -47,7 +47,7 @@
 }
 
 - (void)insertNewObject:(id)sender {
-    Timestamp *timestamp = [[Timestamp alloc] init];
+    LZTimestamp *timestamp = [[LZTimestamp alloc] init];
 
     timestamp.timestamp = [NSDate date];
 
@@ -63,7 +63,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
+        LZDetailViewController *controller = (LZDetailViewController *)[[segue destinationViewController] topViewController];
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
     }
@@ -76,19 +76,14 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [Timestamp allObjects].count;
+    return [LZTimestamp allObjects].count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDate *date = [[Timestamp allObjects] objectAtIndex:indexPath.row];
-
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setLocale:[NSLocale currentLocale]];
-    [dateFormatter setDateFormat:@"hh:mm:ss"];
-
-    cell.textLabel.text = [NSString stringWithFormat:@"... %@", [dateFormatter stringFromDate:date]];
+    LZTimestamp *timestamp = [[LZTimestamp allObjects] objectAtIndex:indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"... %@", timestamp.timestamp.description];
 
     return cell;
 }

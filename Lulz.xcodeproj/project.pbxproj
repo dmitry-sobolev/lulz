@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		741E625897C16634A2715F45 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7449E86F4B52FC7FC839C5 /* libPods.a */; };
-		75DCE3F7C76AB20859595ED4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DCE9AFC0AD3D15A49D5CC8 /* DetailViewController.m */; };
-		75DCE892963BD9CBF6411C64 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DCE9D30BF2964F57A76AF3 /* MasterViewController.m */; };
+		75DCE3F7C76AB20859595ED4 /* LZDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DCE9AFC0AD3D15A49D5CC8 /* LZDetailViewController.m */; };
+		75DCE892963BD9CBF6411C64 /* LZMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DCE9D30BF2964F57A76AF3 /* LZMasterViewController.m */; };
 		A4291C7A1A0D4417006483FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4291C791A0D4417006483FB /* main.m */; };
-		A4291C7D1A0D4417006483FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4291C7C1A0D4417006483FB /* AppDelegate.m */; };
+		A4291C7D1A0D4417006483FB /* LZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4291C7C1A0D4417006483FB /* LZAppDelegate.m */; };
 		A4291C861A0D4417006483FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4291C841A0D4417006483FB /* Main.storyboard */; };
 		A4291C881A0D4417006483FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4291C871A0D4417006483FB /* Images.xcassets */; };
 		A4291C8B1A0D4417006483FB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4291C891A0D4417006483FB /* LaunchScreen.xib */; };
 		A4291C971A0D4418006483FB /* LulzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4291C961A0D4418006483FB /* LulzTests.m */; };
-		A4FBCE3D1A0E795E005A77EB /* Timestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FBCE3C1A0E795E005A77EB /* Timestamp.m */; };
+		A4FBCE3D1A0E795E005A77EB /* LZTimestamp.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FBCE3C1A0E795E005A77EB /* LZTimestamp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,24 +30,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		75DCE7C0FF4D0292DA1F465E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		75DCE9AFC0AD3D15A49D5CC8 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		75DCE9D30BF2964F57A76AF3 /* MasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		75DCEDE01E28C2E114EBB852 /* MasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		75DCE7C0FF4D0292DA1F465E /* LZDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZDetailViewController.h; sourceTree = "<group>"; };
+		75DCE9AFC0AD3D15A49D5CC8 /* LZDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZDetailViewController.m; sourceTree = "<group>"; };
+		75DCE9D30BF2964F57A76AF3 /* LZMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZMasterViewController.m; sourceTree = "<group>"; };
+		75DCEDE01E28C2E114EBB852 /* LZMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZMasterViewController.h; sourceTree = "<group>"; };
 		87B8E7BE1C0837DB65AE4116 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A4291C741A0D4417006483FB /* Lulz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lulz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4291C781A0D4417006483FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4291C791A0D4417006483FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A4291C7B1A0D4417006483FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A4291C7C1A0D4417006483FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A4291C7B1A0D4417006483FB /* LZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZAppDelegate.h; sourceTree = "<group>"; };
+		A4291C7C1A0D4417006483FB /* LZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZAppDelegate.m; sourceTree = "<group>"; };
 		A4291C851A0D4417006483FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4291C871A0D4417006483FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A4291C8A1A0D4417006483FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A4291C901A0D4418006483FB /* LulzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LulzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4291C951A0D4418006483FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4291C961A0D4418006483FB /* LulzTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LulzTests.m; sourceTree = "<group>"; };
-		A4FBCE3B1A0E795E005A77EB /* Timestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timestamp.h; sourceTree = "<group>"; };
-		A4FBCE3C1A0E795E005A77EB /* Timestamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timestamp.m; sourceTree = "<group>"; };
+		A4FBCE3B1A0E795E005A77EB /* LZTimestamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZTimestamp.h; sourceTree = "<group>"; };
+		A4FBCE3C1A0E795E005A77EB /* LZTimestamp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZTimestamp.m; sourceTree = "<group>"; };
 		BE8673423FEFED84303F30E3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CB7449E86F4B52FC7FC839C5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -91,8 +91,8 @@
 		75DCE9DFDA555302333B88CE /* DB */ = {
 			isa = PBXGroup;
 			children = (
-				A4FBCE3B1A0E795E005A77EB /* Timestamp.h */,
-				A4FBCE3C1A0E795E005A77EB /* Timestamp.m */,
+				A4FBCE3B1A0E795E005A77EB /* LZTimestamp.h */,
+				A4FBCE3C1A0E795E005A77EB /* LZTimestamp.m */,
 			);
 			path = DB;
 			sourceTree = "<group>";
@@ -100,10 +100,10 @@
 		75DCEE94617A6158B9405507 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				75DCEDE01E28C2E114EBB852 /* MasterViewController.h */,
-				75DCE7C0FF4D0292DA1F465E /* DetailViewController.h */,
-				75DCE9D30BF2964F57A76AF3 /* MasterViewController.m */,
-				75DCE9AFC0AD3D15A49D5CC8 /* DetailViewController.m */,
+				75DCEDE01E28C2E114EBB852 /* LZMasterViewController.h */,
+				75DCE7C0FF4D0292DA1F465E /* LZDetailViewController.h */,
+				75DCE9D30BF2964F57A76AF3 /* LZMasterViewController.m */,
+				75DCE9AFC0AD3D15A49D5CC8 /* LZDetailViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -131,8 +131,8 @@
 		A4291C761A0D4417006483FB /* Lulz */ = {
 			isa = PBXGroup;
 			children = (
-				A4291C7B1A0D4417006483FB /* AppDelegate.h */,
-				A4291C7C1A0D4417006483FB /* AppDelegate.m */,
+				A4291C7B1A0D4417006483FB /* LZAppDelegate.h */,
+				A4291C7C1A0D4417006483FB /* LZAppDelegate.m */,
 				A4291C841A0D4417006483FB /* Main.storyboard */,
 				A4291C871A0D4417006483FB /* Images.xcassets */,
 				A4291C891A0D4417006483FB /* LaunchScreen.xib */,
@@ -215,6 +215,7 @@
 		A4291C6C1A0D4417006483FB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LZ;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Dmitry Sobolev";
 				TargetAttributes = {
@@ -304,11 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4291C7D1A0D4417006483FB /* AppDelegate.m in Sources */,
+				A4291C7D1A0D4417006483FB /* LZAppDelegate.m in Sources */,
 				A4291C7A1A0D4417006483FB /* main.m in Sources */,
-				75DCE892963BD9CBF6411C64 /* MasterViewController.m in Sources */,
-				A4FBCE3D1A0E795E005A77EB /* Timestamp.m in Sources */,
-				75DCE3F7C76AB20859595ED4 /* DetailViewController.m in Sources */,
+				75DCE892963BD9CBF6411C64 /* LZMasterViewController.m in Sources */,
+				A4FBCE3D1A0E795E005A77EB /* LZTimestamp.m in Sources */,
+				75DCE3F7C76AB20859595ED4 /* LZDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

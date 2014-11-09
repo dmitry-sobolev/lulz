@@ -1,18 +1,18 @@
 //
-//  DetailViewController.m
+//  LZDetailViewController.m
 //  Lulz
 //
 //  Created by Dmitry Sobolev on 07/11/14.
 //  Copyright (c) 2014 Dmitry Sobolev. All rights reserved.
 //
 
-#import "DetailViewController.h"
+#import "LZDetailViewController.h"
 
-@interface DetailViewController ()
+@interface LZDetailViewController ()
 
 @end
 
-@implementation DetailViewController
+@implementation LZDetailViewController
 
 #pragma mark - Managing the detail item
 

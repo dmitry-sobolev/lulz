@@ -1,5 +1,5 @@
 //
-//  DetailViewController.h
+//  LZDetailViewController.h
 //  Lulz
 //
 //  Created by Dmitry Sobolev on 07/11/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController
+@interface LZDetailViewController : UIViewController
 
 @property (strong, nonatomic) id detailItem;
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;

@@ -1,5 +1,5 @@
 //
-//  Timestamp.h
+//  LZTimestamp.h
 //  Lulz
 //
 //  Created by Dmitry Sobolev on 08/11/14.
@@ -8,12 +8,12 @@
 
 #import <Realm/Realm.h>
 
-@interface Timestamp : RLMObject
+@interface LZTimestamp : RLMObject
 
 @property (nonatomic, strong) NSDate *timestamp;
 
 @end
 
 // This protocol enables typed collections. i.e.:
-// RLMArray<Timestamp>
+// RLMArray<LZTimestamp>
 RLM_ARRAY_TYPE(Timestamp)

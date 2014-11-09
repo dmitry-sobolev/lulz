@@ -1,14 +1,14 @@
 //
-//  Timestamp.m
+//  LZTimestamp.m
 //  Lulz
 //
 //  Created by Dmitry Sobolev on 08/11/14.
 //  Copyright (c) 2014 Dmitry Sobolev. All rights reserved.
 //
 
-#import "Timestamp.h"
+#import "LZTimestamp.h"
 
-@implementation Timestamp
+@implementation LZTimestamp
 
 // Specify default values for properties
 
